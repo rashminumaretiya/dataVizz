@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <!-- HEADER  -->
     <header>
       <div class="header-wrapper">
         <div class="container">
@@ -51,15 +52,79 @@
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item dropdown-mega-menu">
                     <a class="nav-link active" href="#">Products</a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu mega-menu">
                       <p class="mega-menu-heading"><span class="text-primary">DataVizz:</span> Synergising your data</p>
                       <div>
                         <div class="container">
-                          <ul>
-                            <li><a href="#">Data Governance</a></li>
-                            <li><a href="#">Data Intelligence</a></li>
-                            <li><a href="#">Data Privacy</a></li>
-                          </ul>
+                          <div class="d-flex align-items-start outside">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><span>Data Governance</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span>Data Intelligence</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
+                              <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><span>Data Privacy</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
+                            </div>
+                            <div class="tab-content flex-fill" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                               <div class="mega-head d-flex justify-content-between align-items-center">
+                                 <h5 class="mb-0">Data Governance</h5>
+                                 <a href="#" class="btn btn-primary">
+                                  <span>See Product Details</span>
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                               </div>
+                               <div class="mega-body">
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="menu-card">
+                                      <span class="icon-out">
+                                        <img src="/assets/images/svg/catalog.svg" alt="">
+                                      </span>
+                                      <div class="flex-fill">
+                                        <h6>Data Catalog</h6>
+                                        <p>Data Elevation: Elevating Insights, Simplifying Management.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="menu-card">
+                                      <span class="icon-out">
+                                        <img src="/assets/images/svg/quality.svg" alt="">
+                                      </span>
+                                      <div class="flex-fill">
+                                        <h6>Data Quality</h6>
+                                        <p>Sharper insights, better decisions – experience data in its purest form with our quality checks.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="menu-card">
+                                      <span class="icon-out">
+                                        <img src="/assets/images/svg/governence.svg" alt="">
+                                      </span>
+                                      <div class="flex-fill">
+                                        <h6>Data Governance</h6>
+                                        <p>Empower teams to collaborate seamlessly while upholding data security through our governance system.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="menu-card">
+                                      <span class="icon-out">
+                                        <img src="/assets/images/svg/intelligence.svg" alt="">
+                                      </span>
+                                      <div class="flex-fill">
+                                        <h6>Data lineage</h6>
+                                        <p>Empower your team with end-to-end data understanding through our interactive lineage feature.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">Data Intelligence</div>
+                              <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">Data Privacy</div>
+                              
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -102,6 +167,25 @@
         </div>
       </div>
     </header>
+
+    <!-- HERO SECTION -->
+
+    <div class="hero-section">
+      <div class="round-orange"></div>
+      <div class="container text-center position-relative">
+        <h1 class="text-center">Enhancing Insights With <span>Data Governance.</span></h1>
+        <p>Prakash empowers enterprises to make data-driven decisions, improve operational efficiency, and mitigate risks.</p>
+        <a href="#" class="btn btn-primary">
+          <span>See Our Products</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <img src="/assets/images/svg/star-outline.svg" alt="" class="star-outline rotate">
+        <div class="img-wrapper d-flex items-center gap-4">
+          <img src="/assets/images/svg/governence-img.svg" alt="">
+          <img src="/assets/images/svg/pillers.svg" alt="">
+        </div>
+      </div>
+    </div>
 
     <script src="/js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
