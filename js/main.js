@@ -32,12 +32,6 @@ $(".company-slider").slick({
       }
     },
     {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
@@ -51,6 +45,24 @@ $(".company-slider").slick({
     },
     {
       breakpoint: 1400,
+      settings: {
+        slidesToShow: 7,
+      }
+    },
+  ]
+});
+$(".logo-slider").slick({
+  speed: 5000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  // cssEase: 'linear',
+  slidesToShow: 6,
+  infinite: true,
+  arrows: false,
+  buttons: false,
+  responsive: [
+    {
+      breakpoint: 0,
       settings: {
         slidesToShow: 7,
       }

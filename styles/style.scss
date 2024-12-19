@@ -18,6 +18,7 @@ $gray-500: #868686;
 $gray-600: #E6E6E6;
 $gray-700: #FAFBF4;
 $gray-800: #D7D7D7;
+$gray-900: #A0A0A0;
 
 $theme-colors: (
   "primary": $primary,
@@ -53,7 +54,7 @@ img {
 p {
   margin-bottom: 0;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.5;
   color: $gray-100;
   @media screen and (max-width: 767px) {
     font-size: 16px;
@@ -65,6 +66,8 @@ h1{
   font-size: 100px;
   line-height: 124px;
   font-weight: 900;
+  text-transform: capitalize;
+  color: $black-300;
   @media screen and (max-width: 1299px){
     font-size: 86px;
     line-height: 106px;
@@ -92,13 +95,20 @@ h1{
 
 h2 {
   font-size: 40px;
+  line-height: 56px;
   font-weight: 700;
-  line-height: 1.5;
+  text-transform: capitalize;
+  color: $black-300;
   @media screen and (max-width: 991px) {
     font-size: 36px;
   }
   @media screen and (max-width: 767px) {
     font-size: 32px;
+    line-height: 46px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 28px;
+    line-height: 40px;
   }
   span {
     color: $primary;
@@ -106,12 +116,32 @@ h2 {
 }
 h3 {
   font-size: 30px;
+  line-height: 48px;
   font-weight: 700;
+  text-transform: capitalize;
+  color: $black-300;
   @media screen and (max-width: 991px) {
     font-size: 26px;
   }
   @media screen and (max-width: 767px) {
     font-size: 22px;
+    line-height: 36px;
+  }
+  span{
+    color: $primary;
+  }
+}
+h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: $black-300;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+  }
+  span{
+    color: $primary;
   }
 }
 
@@ -435,6 +465,9 @@ header{
   @media screen and (max-width: 1299px) {
     padding: 80px 0 50px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 80px 0 0px;
+  }
   .round-orange{
     height: 328px;
     width: 328px;
@@ -627,10 +660,25 @@ header{
   .tab-content{
     margin-top: 80px;
     position: relative;
+    @media screen and (max-width: 767px){
+      margin-top: 40px;
+    }    
     .star-filled{
       position: absolute;
       top: 10px;
       left: 42%;
+      @media screen and (max-width:1199px) {
+        top: -70px;
+      }
+      @media screen and (max-width:991px) {
+        top: -20px;
+        left: 85%;
+      }
+      @media screen and (max-width:575px) {
+        top: -35px;
+        width: 28px;
+        left: 90%;
+      }
     }
     .ai-ml-content{
       p{
@@ -640,13 +688,13 @@ header{
   }
 }
 .rounded-tabs{
-  justify-content: center;
   .nav-item{
     .nav-link{
       border-radius: 32px;
-      border: 1px solid $gray-400;
+      border: 1px solid $gray-800;
       color: $gray-500;
       min-width: 178px;
+      white-space: nowrap;
       &.active{
         border-color: $primary;
         color: $white;
@@ -661,7 +709,7 @@ header{
 
 .challenges-section{
   padding: 100px 0;
-  background-color: $gray-400;
+  background-color: $gray-700;
   position: relative;
   @media screen and (max-width: 1199px) {
     padding: 70px 0;
@@ -717,6 +765,13 @@ header{
       top: 77px;
       right:66px;
       max-width: 64px;
+      @media screen and (max-width:991px) {
+        top: 15px;
+        width: 40px;
+      }
+      @media screen and (max-width:475px) {
+        right: 3%;
+      }
     }
     h2{
       margin-bottom: 8px;
@@ -728,6 +783,13 @@ header{
         border-radius: 8px;
         padding: 65px 30px 30px;
         height: 100%;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          transform: translateY(-10px);
+        }
+        @media screen and (max-width: 575px) {
+          padding: 24px;
+        }
         img{
           height: 99px;
         }
@@ -752,7 +814,133 @@ header{
     }
   }
 }
+// customer stories
+.customer-stories{
+  .top{
+    position: absolute;
+    height: 34px;
+    top: 150px;
+    left: 25%;
+  }
+  .right{
+    position: absolute;
+    height: 64px;
+    right: 25%;
+  }
+  .left{
+    position: absolute;
+    height: 34px;
+    bottom: 35%;
+    left: 5%;
+  }
+  .customer-card{
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 46.8px 0px #00000014;
+    background-color: $white;
+    .desc{
+      text-align: start;
+      font-size: 16px;
+      margin-top: 24px;
+    }
+  }
+  .inner{
+    background-image: url(/assets/images/bg-grediant.png);
+  background-size: cover;
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  .inner-row{
+    transform: translateY(100px);
+  }
+  }
+}
 
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  img {
+    border-radius: 100%;
+    width: 60px !important;
+    height: 60px;
+    object-fit: cover;
+  }
+  .testimonial-user-info {
+    margin-left: 10px;
+    text-align: start;
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      color: $gray-100;
+      font-size: 14px;
+    }
+  }
+  .testimonial-desc {
+    p {
+      margin-bottom: 0;
+      color: $gray;
+      font-size: 16px;
+    }
+  }
+}
+
+.grediant-text{
+  background: -webkit-linear-gradient(312deg, #f98600 45%, #8a2158 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-slider{
+  background-color: $primary;
+  position: absolute;
+  left: -50px;
+  right: -50px;
+  top: 48px;
+  transform: rotate(348deg);
+  width: 100%;
+  max-width: 1120px;
+  padding: 12px 0;
+  h4{
+    color: $white;
+    margin-bottom: 0;
+  }
+}
+
+// benifites section
+.benifits-section{
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  .benifits-card{
+    max-width: 85%;
+    .mw-400{
+      max-width: 400px;
+    }
+    h2{
+      margin-bottom: 12px;
+    }
+    p{
+      margin-bottom: 80px;
+    }
+  }
+}
+
+// journey section
+.journey-section{
+  padding: 40px 12% 0 7%;
+  background-color: $secondary;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  h2{
+    max-width: 560px;
+    text-transform: math-auto;
+  }
+  .btn-secondary{
+    border-color: $black;
+  }
+}
 
 footer{
   .upper-footer{
@@ -765,6 +953,59 @@ footer{
       font-size: 60px;
       line-height: 1.333;
       margin-bottom: 16px;
+      position: relative;
+      .circle{
+        position: absolute;
+        right: 24px;
+        top: 0;
+      }
+    }
+    .desc{
+      margin-bottom: 40px;
+      color: $gray-100;
+      & ~ span{
+        display: block;
+        margin-bottom: 16px;
+        font-weight: 600;
+        color: $black-300;
+      }
+    }
+    .single-list{
+      margin-bottom: 40px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      h6{
+        font-weight: 600;
+        font-size: 20px;
+        color:$black-300;
+      }
+      li{
+        color: $gray-100;
+        font-size: 16px;
+        line-height: 40px;
+        cursor: pointer;
+      }
+    }
+    .footer-social {
+      display: flex;
+      margin-bottom: 30px;
+      li {
+        margin-right: 10px;
+        a {
+          background-color: $gray-900;
+          border-radius: 100%;
+          width: 30px;
+          height: 30px;
+          color: $white;
+          display: block;
+          text-align: center;
+          line-height: 30px;
+          &:hover {
+            background-color: $primary;
+          }
+        }
+      }
     }
   }
   .lower-footer{
@@ -775,6 +1016,7 @@ footer{
     border-top: 1px solid $gray-300;
     color: $gray-100;
     flex-wrap: wrap;
+    margin-top: 60px;
     gap: 12px;
      & > div{
       gap: 10px 30px;
@@ -785,6 +1027,9 @@ footer{
       &:hover{
         text-decoration: underline;
       }
+    }
+    p{
+      font-size: 16px;
     }
   }
 }
