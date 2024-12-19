@@ -12,6 +12,8 @@ $gray: #F8F9FB;
 $gray-100: #5F5F5F;
 $gray-200: #EBEBEB;
 $gray-300: #D9D9D9;
+$gray-400: #BCBCBC;
+$gray-500: #868686;
 
 $theme-colors: (
   "primary": $primary,
@@ -48,21 +50,42 @@ p {
   margin-bottom: 0;
   font-size: 20px;
   line-height: 36px;
+  color: $gray-100;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 h1{
   font-size: 100px;
   line-height: 124px;
   font-weight: 900;
+  @media screen and (max-width: 1299px){
+    font-size: 86px;
+    line-height: 106px;
+  }
+  @media screen and (max-width: 1024px){
+    font-size: 60px;
+    line-height: 80px;
+  }
+  @media screen and (max-width: 991px){
+    font-size: 45px;
+    line-height: 65px;
+  }
+  @media screen and (max-width: 575px){
+    font-size: 8vw;
+    line-height: 12vw;
+  }
+  @media screen and (max-width: 425px){
+    font-size: 10vw;
+    line-height: 14vw;
+  }
   span{
     color: $primary;
   }
 }
 
-h4 {
-  font-size: 30px;
-  font-weight: 600;
-}
 h2 {
   font-size: 40px;
   font-weight: 700;
@@ -134,6 +157,10 @@ h3 {
   }
 }
 
+.mt-20{
+  margin-top: 20px;
+}
+
 // Button{
 .btn {
   padding: 9px 20px;
@@ -189,10 +216,16 @@ h3 {
 header{
   height: 104px;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 991px){
+    height: 65px;
+  }
 }
 .header-wrapper {
   position: relative;
   z-index: 999;
+  @media screen and (max-width: 991px){
+  padding: 15px 0;
+  }
   &.fixed-header{
     background-color: $white;
     box-shadow: 0px 15px 10px -15px $gray-300;
@@ -222,8 +255,8 @@ header{
     .navbar-nav {
       gap: 40px;
       margin-right: 40px;
-      @media screen and (max-width: 991px) {
-        gap: 10px;
+      @media screen and (max-width: 1199px) {
+        gap: 20px;
       }
       .nav-item {
         position: relative;
@@ -396,6 +429,9 @@ header{
 .hero-section{
   padding: 180px 0 50px;
   position: relative;
+  @media screen and (max-width: 1299px) {
+    padding: 80px 0 50px;
+  }
   .round-orange{
     height: 328px;
     width: 328px;
@@ -405,6 +441,20 @@ header{
     top: 5%;
     right: 17.5%;
     z-index: -1;
+    @media screen and (max-width: 1299px) {
+      height: 200px;
+      width: 200px;
+      top: -1%;
+      right: 15%;
+    }
+    @media screen and (max-width: 1024px){
+      right: 11.5%;
+    }
+    @media screen and (max-width: 767px){
+      height: 150px;
+      width: 150px;
+      top: 3%;
+    }
   }
   h1{
     position: relative;
@@ -421,9 +471,50 @@ header{
     position: absolute;
     top: 27%;
     left: 15%;
+    @media screen and (max-width:1399px) {
+      left: 5%;
+    }
+    @media screen and (max-width:1199px) {
+      top: 35%;
+    }
+    @media screen and (max-width:991px) {
+      top: 50%;
+      height: 40px;
+    }
+    @media screen and (max-width:767px) {
+      top: 19%;
+      height: 40px;
+      left: 12px;
+    }
+    @media screen and (max-width:767px) {
+      top: 51%;
+    }
   }
   .img-wrapper{
     margin-top: 40px;
+    overflow: hidden;
+    img{
+      max-height: 456px;
+    }
+    .img1{
+      padding-right: 12px;
+      width: 32.5%;
+      @media screen and (max-width: 991px) {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto 14px;
+        padding-right: 0;
+      }
+      @media screen and (max-width: 575px) {
+        max-width: 60%;
+      }
+    }
+    .img2{
+      width: 65%;
+      @media screen and (max-width: 991px) {
+        width: auto;
+      }
+    }
   }
 }
 
@@ -496,6 +587,48 @@ header{
       max-height: 57px;
       height: auto;
       display: inline-block;
+    }
+  }
+}
+
+// capture-solution
+.capture-solution{
+  .head-wrapper{
+    p{
+      max-width: 1262px;
+      margin: 8px auto 40px;
+    }
+  }
+  .tab-content{
+    margin-top: 80px;
+    position: relative;
+    .star-filled{
+      position: absolute;
+      top: 10px;
+      left: 42%;
+    }
+    .ai-ml-content{
+      p{
+        max-width: 659px;
+      }
+    }
+  }
+}
+.rounded-tabs{
+  justify-content: center;
+  .nav-item{
+    .nav-link{
+      border-radius: 32px;
+      border: 1px solid $gray-400;
+      color: $gray-500;
+      min-width: 178px;
+      &.active{
+        border-color: $primary;
+        color: $white;
+      }
+    }
+    & + .nav-item{
+      margin-left: 20px;
     }
   }
 }
