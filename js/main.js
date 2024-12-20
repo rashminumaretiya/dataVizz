@@ -83,6 +83,37 @@ $(".logo-slider").slick({
     },
   ]
 });
+$(".webflow-slider").slick({
+  speed: 5000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  // cssEase: 'linear',
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  infinite: true,
+  arrows: false,
+  buttons: false,
+  responsive: [
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+  ]
+});
 
 
 jQuery(document).ready(function($){

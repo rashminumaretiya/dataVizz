@@ -15,168 +15,277 @@
 <body>
   <!-- HEADER  -->
   <header>
-      <div class="header-wrapper">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid p-0">
-              <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="" />
-              </a>
-              <span class="logo-tagline">support@datavizz.in</span>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-expanded="false"
+    <div class="header-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/svg/main-logo.svg" alt="" />
+            </a>
+            <span class="logo-tagline d-sm-inline-block d-none text-decoration-none">support@datavizz.in</span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-expanded="false"
+            >
+              <svg
+                fill="#000000"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  fill="#000000"
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    id="primary"
-                    d="M3,12H21M9,18H21M3,6H15"
-                    stroke="#000000"
-                    ;
-                    style="
-                      fill: none;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-width: 2;
-                      transition: all 0.2s ease-in-out;
-                    "
-                  ></path>
-                </svg>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item dropdown-mega-menu">
-                    <a class="nav-link active" href="#">Products</a>
-                    <div class="dropdown-menu mega-menu">
-                      <p class="mega-menu-heading"><span class="text-primary">DataVizz:</span> Synergising your data</p>
-                      <div>
-                        <div class="container">
-                          <div class="d-flex align-items-start outside">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><span>Data Governance</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
-                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span>Data Intelligence</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
-                              <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><span>Data Privacy</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
-                            </div>
-                            <div class="tab-content flex-fill" id="v-pills-tabContent">
-                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                               <div class="mega-head d-flex justify-content-between align-items-center">
-                                 <h5 class="mb-0">Data Governance</h5>
-                                 <a href="#" class="btn btn-primary">
-                                  <span>See Product Details</span>
-                                  <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                               </div>
-                               <div class="mega-body">
-                                <div class="row">
-                                  <div class="col-lg-6">
-                                    <div class="menu-card">
-                                      <span class="icon-out">
-                                        <img src="/assets/images/svg/catalog.svg" alt="">
-                                      </span>
-                                      <div class="flex-fill">
-                                        <h6>Data Catalog</h6>
-                                        <p>Data Elevation: Elevating Insights, Simplifying Management.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <div class="menu-card">
-                                      <span class="icon-out">
-                                        <img src="/assets/images/svg/quality.svg" alt="">
-                                      </span>
-                                      <div class="flex-fill">
-                                        <h6>Data Quality</h6>
-                                        <p>Sharper insights, better decisions – experience data in its purest form with our quality checks.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <div class="menu-card">
-                                      <span class="icon-out">
-                                        <img src="/assets/images/svg/governence.svg" alt="">
-                                      </span>
-                                      <div class="flex-fill">
-                                        <h6>Data Governance</h6>
-                                        <p>Empower teams to collaborate seamlessly while upholding data security through our governance system.</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <div class="menu-card">
-                                      <span class="icon-out">
-                                        <img src="/assets/images/svg/intelligence.svg" alt="">
-                                      </span>
-                                      <div class="flex-fill">
-                                        <h6>Data lineage</h6>
-                                        <p>Empower your team with end-to-end data understanding through our interactive lineage feature.</p>
-                                      </div>
+                <path
+                  id="primary"
+                  d="M3,12H21M9,18H21M3,6H15"
+                  stroke="#000000"
+                  ;
+                  style="
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2;
+                    transition: all 0.2s ease-in-out;
+                  "
+                ></path>
+              </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown-mega-menu">
+                  <a class="nav-link active">Products</a>
+                  <div class="dropdown-menu mega-menu">
+                    <p class="mega-menu-heading"><span class="text-primary">DataVizz:</span> Synergising your data</p>
+                    <div>
+                      <div class="container">
+                        <div class="d-flex align-items-start outside">
+                          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><span>Data Governance</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span>Data Intelligence</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
+                            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><span>Data Privacy</span> <img src="/assets/images/svg/right-arrow.svg" alt="" /></button>
+                          </div>
+                          <div class="tab-content flex-fill" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                             <div class="mega-head d-lg-flex d-none justify-content-between align-items-center">
+                               <h5 class="mb-0">The Data Governance Cloud</h5>
+                               <a href="#" class="btn btn-primary">
+                                <span>See Product Details</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                              </a>
+                             </div>
+                             <div class="mega-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="menu-card">
+                                    <span class="icon-out">
+                                      <img src="/assets/images/svg/catalog.svg" alt="">
+                                    </span>
+                                    <div class="flex-fill">
+                                      <h6>Data Catalog</h6>
+                                      <p>Organize and discover data assets with ease. </p>
                                     </div>
                                   </div>
                                 </div>
+                                <div class="col-lg-6">
+                                  <div class="menu-card">
+                                    <span class="icon-out">
+                                      <img src="/assets/images/svg/quality.svg" alt="">
+                                    </span>
+                                    <div class="flex-fill">
+                                      <h6>Data Quality</h6>
+                                      <p>Ensure accurate, reliable, and consistent data across systems.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 mb-lg-0 mb-4">
+                                  <div class="menu-card">
+                                    <span class="icon-out">
+                                      <img src="/assets/images/svg/governence.svg" alt="">
+                                    </span>
+                                    <div class="flex-fill">
+                                      <h6>Data Governance</h6>
+                                      <p>Establish control, compliance, and data integrity protocols.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="menu-card">
+                                    <span class="icon-out">
+                                      <img src="/assets/images/svg/intelligence.svg" alt="">
+                                    </span>
+                                    <div class="flex-fill">
+                                      <h6>Data lineage</h6>
+                                      <p>Track data flow and transformations for better transparency.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                              <div class="mega-head d-lg-flex d-none justify-content-between align-items-center">
+                                <h5 class="mb-0">The Data Intelligence Cloud</h5>
+                                <a href="#" class="btn btn-primary">
+                                 <span>See Product Details</span>
+                                 <i class="fa-solid fa-arrow-right"></i>
+                               </a>
+                              </div>
+                              <div class="mega-body">
+                               <div class="row">
+                                 <div class="col-lg-6">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/catalog.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>Data Lake</h6>
+                                       <p> Store vast amounts of structured and unstructured data efficiently. </p>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/quality.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>Data Query</h6>
+                                       <p>Simplify data search and retrieval with powerful query tools.</p>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6 mb-lg-0 mb-4">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/governence.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>Data Analytics</h6>
+                                       <p>Transform raw data into actionable insights and business value.</p>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/intelligence.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>ML Models</h6>
+                                       <p>Leverage machine learning to drive predictive analytics and automation. </p>
+                                     </div>
+                                   </div>
+                                 </div>
                                </div>
                               </div>
-                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">Data Intelligence</div>
-                              <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">Data Privacy</div>
-                              
                             </div>
+                            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                              <div class="mega-head d-lg-flex d-none justify-content-between align-items-center">
+                                <h5 class="mb-0">The Data Privacy Cloud</h5>
+                                <a href="#" class="btn btn-primary">
+                                 <span>See Product Details</span>
+                                 <i class="fa-solid fa-arrow-right"></i>
+                               </a>
+                              </div>
+                              <div class="mega-body">
+                               <div class="row">
+                                 <div class="col-lg-6">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/catalog.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>The Data Privacy Cloud</h6>
+                                       <p> Dashboard with powerful analytics and Consent log for audit and compliance</p>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/quality.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>Smart website scanning</h6>
+                                       <p> Identifies cookies and vendors on your website automatically, categorizes them smartly and provides recommendations to save time. </p>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6 mb-lg-0 mb-4">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/governence.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>Personalized & Multilingual Banner</h6>
+                                       <p>Create a personalized, multi-lingual consent banner for a seamless user experience and stronger brand identity. </p>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="menu-card">
+                                     <span class="icon-out">
+                                       <img src="/assets/images/svg/intelligence.svg" alt="">
+                                     </span>
+                                     <div class="flex-fill">
+                                       <h6>Easy Third-party Vendor Management</h6>
+                                       <p>Efficiently manage third-party vendors (Google Analytics & Ads, Facebook Pixel, etc.) for improved data privacy.</p>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                              </div>
+                            </div>
+                            
                           </div>
                         </div>
                       </div>
                     </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Solutions</a>
-                    <div class="dropdown-menu">
-                      <ul class="">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Career</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Company</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Inside</a>
-                    <div class="dropdown-menu">
-                      <ul>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Support</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">
-                  <span>Try Demo</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Solutions</a>
+                  <div class="dropdown-menu">
+                    <ul class="">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Partners</a></li>
+                      <li><a href="#">Career</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inside</a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Resources</a></li>
+                      <li><a href="#">Blogs</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="#">Support</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary">
+                <span>Contact Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
   <!-- HERO SECTION -->
     <div class="banner-section pb-150 about-banner">
       <div class="container">
         <img src="./assets/images/svg/star-outline.svg" alt="" class="ring1 rotate">
         <div class="row justify-content-center">
-          <div class="col-md-4">
+          <div class="col-xxl-4 col-lg-6">
             <div class="content-wrapper">
               <div class="logo-icon">
                 <img src="assets/images/logo-icon.png" alt="logo-icon"/>
@@ -198,106 +307,190 @@
     </div>
     <div class="about-intro-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-xl-5">
             <div class="intro-title">
               <img src="./assets/images/svg/star-outline.svg" alt="star-outline" class="ring1 rotate">
               <h3><span>/</span> Here's how we were born.</h3>
             </div>
           </div>
-          <div class="col-md-6">
-            <img src="assets/images/request-demo.png" class="rotate" alt="request-demo"/>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="intro-year">
-              <span></span>
-              <span></span>
-              <img src="./assets/images/svg/arrow.svg" alt="arrow">
-              <h6 class="text-primary">2018!</h6>
-              <h6>A Look Back</h6>
-            </div>
+          <div class="col-xl-6 col-lg-7">
+            <img src="assets/images/request-demo.png" class="rotate ms-xl-auto mx-auto my-xl-0 my-4 request-demo-img" alt="request-demo"/>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="">
+          <div class="col-xl-8 col-12">
+            <div class="intro-year">
+              <span class="primary-round me-3"></span>
+              <span class="primary-round me-4"></span>
+              <img src="./assets/images/svg/arrow.svg" alt="arrow" class="arrow">
+              <div class="ps-4 ms-3 d-flex flex-column justify-content-end">
+                <h6 class="text-primary">2018!</h6>
+                <h6>A Look Back</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center pb-150">
+          <div class="col-lg-10 col-12">
+            <div class="anecode-section">
               <h2>~An Anecdote~</h2>
-              <p>Founded six years ago, DataVizz emerged from a passion for technology and data, blending both to lead in the world of data-driven decision-making. Over the years, we have grown into experts in data intelligence, governance, and privacy helping businesses know the actual influence of their data.</p>
+              <p class="text-center mb-md-5 mb-3">Founded six years ago, DataVizz emerged from a passion for technology and data, blending both to lead in the world of data-driven decision-making. Over the years, we have grown into experts in data intelligence, governance, and privacy helping businesses know the actual influence of their data.</p>
   
-              <p>The story of DataVizz began with a bold vision. Ankit Sheth, our founder, recognized the challenges businesses face in managing data across multiple platforms. In September 2018, DataVizz was born, aiming to simplify and unify data management into one seamless platform. Since then, we have been on a mission to delegate businesses with intelligent data insights, strong governance, and robust privacy all in the cloud.</p>
+              <p class="text-center">The story of DataVizz began with a bold vision. Ankit Sheth, our founder, recognized the challenges businesses face in managing data across multiple platforms. In September 2018, DataVizz was born, aiming to simplify and unify data management into one seamless platform. Since then, we have been on a mission to delegate businesses with intelligent data insights, strong governance, and robust privacy all in the cloud.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  <div>
+  <div class="datawizz-hire">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <img src="./assets/images/about-image.jpg" alt="about-image">
-        </div>
-        <div class="col-md-4">
-          <img src="./assets/images/about-pattern.jpg" alt="about-pattern">
-        </div>
+      <div class="d-flex flex-column flex-lg-row img-about-wrapper">
+        <img src="./assets/images/about-image.jpg" alt="about-image" class="pe-lg-3 mb-lg-0 mb-4 big">
+        <img src="./assets/images/about-pattern.jpg" alt="about-pattern" class="ps-lg-3 small">
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Why customers hire DataVizz?</h4>
-              <p>We focus on data intelligence, governance, and privacy in the cloud, ensuring that your data is handled with care and expertise. </p>
+      <div class="row justify-content-center pt-5 mt-4">
+        <div class="col-lg-10">
+          <div class="row justify-content-between">
+            <div class="col-lg-5">
+              <h2>Why customers hire DataVizz?</h2>
+              <p class="hire-text mt-3">We focus on data intelligence, governance, and privacy in the cloud, ensuring that your data is handled with care and expertise. </p>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <p>We bring our best to the table with our profound knowledge, expertise, and specialization. Our engineers measure success by how effectively they launch applications, the time it takes to roll out new features, and how well systems perform during peak hours. We know what it takes to produce high-quality software that works reliably, and our customers trust us with complex and innovative projects built on a few key features. </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
+      <div class="row justify-content-center complex-details">
+        <div class="col-md-11">
           <ul>
-            <li>
-              <h4>Complex</h4>
+            <li class="mb-sm-5 mb-4">
+              <h3>Complex</h3>
               <p>problem-solving ability</p>
             </li>
-            <li>
-              <h4>Experienced</h4>
+            <li class="mb-sm-5 mb-4">
+              <h3>Experienced</h3>
               <p>engineers</p>
             </li>
-            <li>
-              <h4>Industry-specific</h4>
+            <li class="mb-sm-5 mb-4">
+              <h3>Industry-specific</h3>
               <p>pblueprints</p>
             </li>
-            <li>
-              <h4>Collaborative</h4>
+            <li class="mb-sm-5 mb-4">
+              <h3>Collaborative</h3>
               <p>engineering culture</p>
             </li>
-            <li>
-              <h4>Exceptional</h4>
+            <li class="mb-sm-5 mb-4">
+              <h3>Exceptional</h3>
               <p>team</p>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    </div>
   </div>
 
-  <div>
+  <div class="story-mission-section pt-100 pb-150">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div>
-            <h3>Our Story</h3>
+        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+          <div class="grediant-card orange-card">
+            <img src="/assets/images/svg/star-outline.svg" alt="" class="bottom rotate">
+            <img src="/assets/images/svg/star-filled.svg" alt="" class="top rotate">
+            <h2>Our Story</h2>
             <p>At DataVizz, our journey began with a simple yet profound realization: data is the lifeblood of modern enterprises. We recognized the critical need for data observability – the ability to proactively monitor, analyze, and improve data quality. Data inconsistencies can derail businesses. That's why we commence on a mission to allow organizations with 'DataVizz' - a tool that sheds light on their data, providing real-time insights and ensuring data privacy. We believe that in this era of data-driven decisions, observability is not just an option; it's a necessity.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div>
-            <h3>Our Mission</h3>
+        <div class="col-lg-6 col-12">
+          <div class="grediant-card blue-card">
+            <img src="/assets/images/svg/star-outline.svg" alt="" class="top rotate">
+            <img src="/assets/images/svg/star-filled.svg" alt="" class="bottom rotate">
+            <h2>Our Mission</h2>
             <p>Our mission is to provide a cutting-edge Data Intelligence, Data Governance and Data Privacy Tool that offers continuous monitoring and insights across your data stack. With features encompassing data observability, data governance, data privacy, and data intelligence our tool ensures data-driven decisions are underpinned by accuracy, privacy, reliability, and compliance. We aim to ensure organizations know the true value of their data assets through transparent and controlled data management processes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="client-section">
+    <div class="container">
+      <div class="text-center head position-relative">
+        <img src="/assets/images/svg/star-outline.svg" alt="" class="star-outline rotate d-sm-block d-none">
+        <h2>Clients are <span>saying</span></h2>
+        <p>At DataVizz, we're proud to work with businesses and ensure the security of their data. Here's how we've made a difference for <span>our clients.</span> <img src="/assets/images/svg/orange-star.svg" alt=""></p>
+      </div>
+      <div class="wrap">
+        <div class="webflow-slider pt-sm-5 pt-3 mt-4">
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/images/svg/webflow.svg" alt="" />
+          </div>
+        </div>
+        <div class="pt-100 mx-lg-5 px-lg-3 position-relative">
+          <img src="/assets/images/svg/vertical-line.svg" alt="" class="top up-down">
+          <img src="/assets/images/svg/vertical-line.svg" alt="" class="bottom up-down">
+          <div class="client-card">
+            <img src="/assets/images/svg/w-blue.svg" alt="" class="user">
+            <div class="card">
+              <div class="testimonial-user mb-0">
+                <img src="assets/images/user.png" alt="user" />
+                <div class="testimonial-user-info">
+                  <h6>Maria Paula Flores</h6>
+                  <p>Novalab</p>
+                </div>
+              </div>
+              <p>We are thrilled with the end result especially the fact that the project went live in time for a series of important meetings in the nation’s capital</p>
+            </div>
+          </div>
+          <div class="client-card flex-row-reverse">
+            <img src="/assets/images/svg/w-blue.svg" alt="" class="user">
+            <div class="card">
+              <div class="testimonial-user mb-0">
+                <img src="assets/images/user.png" alt="user" />
+                <div class="testimonial-user-info">
+                  <h6>Elsie – Rose Kane</h6>
+                  <p>Loop Back</p>
+                </div>
+              </div>
+              <p>We help our clients reimagine, restructure and renew business functions to create agile and resilient organizations. They responded fast.</p>
+            </div>
+          </div>
+          <div class="client-card flex-row-reverse">
+            <img src="/assets/images/svg/w-blue.svg" alt="" class="user">
+            <div class="card">
+              <div class="testimonial-user mb-0">
+                <img src="assets/images/user.png" alt="user" />
+                <div class="testimonial-user-info">
+                  <h6>Glenn Laurel</h6>
+                  <p>Ippsum</p>
+                </div>
+              </div>
+              <p>Business startup services were recommended to me and lived up to all my expectations. Very impressive service from start to finish was easy.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -307,50 +500,50 @@
   <div class="benifits-section pt-100 pb-50">
     <div class="container">
       <div class="text-center">
-        <h2>Discover Our <span>Exclusive Benefits</span></h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h2>Our <span>core values</span></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
       <div class="row mt-5 pt-3">
         <div class="col-lg-6">
           <div class="row">
             <div class="col-12">
               <div class="benifits-card">
-                <h4 class="mw-400">Real-time visibility into data stacks</h4>
-                <p>Real-time visibility into data stacks offered by a prakash observability platform enables proactive issue detection, data integrity assurance, and performance optimization for efficient, reliable, and agile data management.</p>
+                <h4 class="mw-400">Experience</h4>
+                <p>Since our inception in 2018, DataVizz has brought excellent insights and practical knowledge to every project. Our expertise in data intelligence, privacy, and governance enables us to solve complex challenges with precision.</p>
               </div>
             </div>
             <div class="col-12">
               <div class="benifits-card">
-                <h4>Identification and resolution of data anomalies and inconsistencies</h4>
-                <p>Prakash observability platform identifies and resolves data anomalies and inconsistencies by actively monitoring data processes, ensuring accurate, reliable insights for informed decision-making.</p>
+                <h4>Collaboration</h4>
+                <p>We believe that the best outcomes are achieved through collaboration. By working closely with our clients, we create solutions that align with their unique goals and challenges.</p>
               </div>
             </div>
             <div class="col-12">
               <div class="benifits-card">
-                <h4 class="mw-400">Streamlined Governance and Compliance</h4>
-                <p>Prakash observability platform enables streamlined governance and compliance by providing tools to monitor and audit data pipelines, ensuring adherence to regulations and standards, and facilitating transparent data management practices.</p>
+                <h4 class="mw-400">Automation</h4>
+                <p>Leveraging automation, we streamline processes, reduce errors, and maximize efficiency, allowing clients to manage their data securely and intelligently with minimal effort. </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mt-5 pt-3">
+        <div class="col-lg-6 mt-md-5 pt-md-3">
           <div class="row">
             <div class="col-12">
               <div class="benifits-card">
-                <h4>Automated data quality checks and validations</h4>
-                <p>Automated data quality checks and validations provided by a prakash observability platform empower organizations to ensure the accuracy, consistency, and reliability of their data assets by automatically identifying discrepancies, anomalies, and errors, thus enabling informed decision-making and enhancing overall data-driven operations.</p>
+                <h4>Specialization</h4>
+                <p>At DataVizz, we focus solely on data intelligence, privacy, and governance, delivering tailored solutions that improve businesses to make informed decisions and comply with regulations. </p>
               </div>
             </div>
             <div class="col-12">
               <div class="benifits-card">
-                <h4>Enhanced decision-making based on comprehensive insights.</h4>
-                <p>Prakash observability platform empowers enhanced decision-making by offering comprehensive insights into data health, performance, and integrity, enabling organizations to make informed choices with confidence and agility.</p>
+                <h4>Agility</h4>
+                <p>DataVizz prides itself on its ability to quickly adapt to changing client needs and market demands, ensuring our solutions are flexible and scalable for increasing environments. </p>
               </div>
             </div>
             <div class="col-12">
               <div class="benifits-card">
-                <h4>Timely resolution of data issues to avoid disruptionsgit</h4>
-                <p>Prakash platform ensures the timely resolution of data issues by swiftly identifying anomalies, errors, and discrepancies within data processes. This proactive approach aids in maintaining data accuracy and operational efficiency, enabling prompt corrective actions and minimizing potential disruptions</p>
+                <h4>Quality  </h4>
+                <p>Quality is at the core of our operations. We maintain rigorous standards across all aspects of our business, ensuring reliable solutions that drive success and long-term trust. </p>
               </div>
             </div>
           </div>
@@ -359,7 +552,7 @@
     </div>
   </div>
   
-  <div class="container pt-5">
+  <div class="container pt-sm-5">
       <div class="journey-section">
         <div class="flex-fill">
           <h2><span>Ready to start your data observability journey?</span></h2>
@@ -391,9 +584,9 @@
               </a>
             </div>
           </div>
-          <div class="col-12 col-lg-7">
+          <div class="col-12 col-lg-7 mt-lg-0 mt-5">
             <div class="row">
-              <div class="col-12 col-lg-4">
+              <div class="col-6 col-lg-4 col-sm-4">
                 <div class="single-list">
                   <h6>Platform</h6>
                   <ul>
@@ -418,7 +611,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-12 col-lg-4">
+              <div class="col-6 col-lg-4 col-sm-4">
                 <div class="single-list">
                   <h6>By Use cases</h6>
                   <ul>
@@ -437,7 +630,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-12 col-lg-4">
+              <div class="col-12 col-lg-4 col-sm-4 mt-sm-0 mt-4">
                 <div class="single-list">
                   <h6>Contact Us</h6>
                   <ul>
