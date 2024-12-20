@@ -1033,3 +1033,84 @@ footer{
     }
   }
 }
+
+
+
+.banner-section{
+  padding-top: 75px;
+  .content-wrapper{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 926px;
+    margin: 0 auto;
+    h2{
+      margin-bottom: 16px;
+      font-size: 60px;
+      line-height: 1.4;
+      font-weight: 900;
+      @media screen and (max-width: 991px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 34px;
+      }
+      @media screen and (max-width: 475px) {
+        font-size: 30px;
+      }
+    }
+    p{
+      margin: 0 auto 30px;
+      @media screen and (max-width: 767px) {
+        margin: 0 auto 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+// Career Style
+.career-banner{
+  .star{
+    position: absolute;
+    top: 55%;
+    left: -10%;
+    @media screen and (max-width: 1199px) {
+      top: 83%;
+      left: 80px;
+      max-width: 60px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 80%;
+      left: 30px;
+      max-width: 50px;
+    }
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
+  }
+  .ring{
+    position: absolute;
+    top: 30%;
+    right: -8%;
+    @media screen and (max-width:1399px) {
+      max-width: 60px;
+      right: -1%;
+    }
+    @media screen and (max-width:767px) {
+      max-width: 40px;
+        right: 0%;
+        top: -40px;
+    }
+  }
+  p{
+    max-width: 889px;
+  }
+}
