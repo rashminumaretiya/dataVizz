@@ -18,7 +18,8 @@ $gray-500: #868686;
 $gray-600: #E6E6E6;
 $gray-700: #FAFBF4;
 $gray-800: #D7D7D7;
-$gray-900: #A0A0A0;
+$light-gray: #A0A0A0;
+$light-gray-100: #E1E1E1;
 
 $theme-colors: (
   "primary": $primary,
@@ -993,7 +994,7 @@ footer{
       li {
         margin-right: 10px;
         a {
-          background-color: $gray-900;
+          background-color: $light-gray;
           border-radius: 100%;
           width: 30px;
           height: 30px;
@@ -1034,8 +1035,6 @@ footer{
   }
 }
 
-
-
 .banner-section{
   padding-top: 75px;
   .content-wrapper{
@@ -1071,9 +1070,6 @@ footer{
     }
   }
 }
-
-
-
 
 
 // Career Style
@@ -1112,5 +1108,47 @@ footer{
   }
   p{
     max-width: 889px;
+  }
+}
+
+
+// About Style
+.about-banner {
+  position: relative;
+  .ring1 {
+    position: absolute;
+    bottom: 22%;
+    left: 30%;
+    width: 53px;
+  }
+  .logo-icon {
+    border: 1px solid $light-gray-100;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about-intro-section {
+  padding-top: 30px;
+  .intro-title {
+    img {
+      float: left;
+      width: 87px;
+      margin-top: 20px;
+    }
+    h3 {
+      font-size: 100px;
+      line-height: 1.2;
+      font-weight: normal;
+      span {
+        color: $black-300;
+        margin: 0 30px;
+      }
+    }
   }
 }
