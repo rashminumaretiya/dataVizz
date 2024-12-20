@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-$primary: #FF6348;
-$secondary: #FFF2F0;
-$secondary-100: #EDE7E7;
-$secondary-200: #FFF5F3;
-$black: #191F25;
+$primary: #ff6348;
+$secondary: #fff2f0;
+$secondary-100: #ede7e7;
+$secondary-200: #fff5f3;
+$black: #191f25;
 $black-100: #222222;
 $black-200: #000000;
-$black-300: #101C34;
-$white: #FFFFFF;
-$gray: #F8F9FB;
-$gray-100: #5F5F5F;
-$gray-200: #EBEBEB;
-$gray-300: #D9D9D9;
-$gray-400: #BCBCBC;
+$black-300: #101c34;
+$white: #ffffff;
+$gray: #f8f9fb;
+$gray-100: #5f5f5f;
+$gray-200: #ebebeb;
+$gray-300: #d9d9d9;
+$gray-400: #bcbcbc;
 $gray-500: #868686;
 $gray-600: #E6E6E6;
 $gray-700: #FAFBF4;
 $gray-800: #D7D7D7;
 $light-gray: #A0A0A0;
 $light-gray-100: #E1E1E1;
+$light-gray-200: #747474;
 
 $theme-colors: (
   "primary": $primary,
@@ -63,21 +64,21 @@ p {
   }
 }
 
-h1{
+h1 {
   font-size: 100px;
   line-height: 124px;
   font-weight: 900;
   text-transform: capitalize;
   color: $black-300;
-  @media screen and (max-width: 1299px){
+  @media screen and (max-width: 1299px) {
     font-size: 86px;
     line-height: 106px;
   }
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     font-size: 60px;
     line-height: 80px;
   }
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 991px) {
     font-size: 45px;
     line-height: 65px;
   }
@@ -89,7 +90,7 @@ h1{
     font-size: 32px;
     line-height: 46px;
   }
-  span{
+  span {
     color: $primary;
   }
 }
@@ -128,7 +129,7 @@ h3 {
     font-size: 22px;
     line-height: 36px;
   }
-  span{
+  span {
     color: $primary;
   }
 }
@@ -141,7 +142,7 @@ h4 {
   @media screen and (max-width: 767px) {
     font-size: 20px;
   }
-  span{
+  span {
     color: $primary;
   }
 }
@@ -193,7 +194,7 @@ h4 {
   }
 }
 
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 
@@ -247,20 +248,20 @@ h4 {
 }
 
 // Header Styles
-header{
+header {
   height: 104px;
   transition: all 0.3s ease-in-out;
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 991px) {
     height: 65px;
   }
 }
 .header-wrapper {
   position: relative;
   z-index: 999;
-  @media screen and (max-width: 991px){
-  padding: 15px 0;
+  @media screen and (max-width: 991px) {
+    padding: 15px 0;
   }
-  &.fixed-header{
+  &.fixed-header {
     background-color: $white;
     box-shadow: 0px 15px 10px -15px $gray-300;
   }
@@ -313,7 +314,8 @@ header{
             display: inline-block;
             padding: 10px 0;
           }
-          &:hover, &.active {
+          &:hover,
+          &.active {
             color: $primary;
           }
         }
@@ -344,8 +346,8 @@ header{
               }
             }
           }
-          &.mega-menu{
-            .outside{
+          &.mega-menu {
+            .outside {
               padding: 44px 0;
               @media screen and (max-width:767px) {
                 flex-direction: column;
@@ -365,7 +367,7 @@ header{
                 }
               }
             }
-            .nav-link{
+            .nav-link {
               padding: 27px 24px;
               border: 1px solid $gray-200;
               border-radius: 8px;
@@ -390,7 +392,7 @@ header{
                 color: $gray-100;
                 font-weight: 700;
               }
-              &:last-child{
+              &:last-child {
                 margin-bottom: 0;
                 margin-right: 0;
               }
@@ -403,7 +405,7 @@ header{
               padding: 8px 16px;
               }
             }
-            .tab-content{
+            .tab-content {
               border-left: 1px solid $gray-300;
               padding: 0 40px;
               @media screen and (max-width: 1199px) {
@@ -418,7 +420,7 @@ header{
                 padding-bottom: 12px;
                 border-bottom: 1px solid $gray-300;
               }
-              .mega-body{
+              .mega-body {
                 padding: 30px 0;
                 @media screen and (max-width: 991px) {
                   padding: 0;
@@ -426,7 +428,7 @@ header{
                 .row{
                   [class*="col-"]{
                     &:nth-child(2),
-                    &:first-child{
+                    &:first-child {
                       margin-bottom: 48px;
                       @media screen and (max-width: 1199px) {
                         margin-bottom: 24px;
@@ -434,9 +436,9 @@ header{
                     }
                   }
                 }
-                .menu-card{
+                .menu-card {
                   display: flex;
-                  .icon-out{
+                  .icon-out {
                     background-color: $gray;
                     border: 1px solid $gray-300;
                     border-radius: 100%;
@@ -451,7 +453,7 @@ header{
                       margin-right: 12px;
                     }
                   }
-                  h6{
+                  h6 {
                     color: $black;
                     font-size: 16px;
                     line-height: 26px;
@@ -460,7 +462,7 @@ header{
                       margin-bottom: 0;
                     }
                   }
-                  p{
+                  p {
                     color: $gray-100;
                     font-size: 14px;
                     line-height: 24px;
@@ -470,7 +472,6 @@ header{
                     }
                   }
                 }
-
               }
             }
           }
@@ -519,8 +520,8 @@ header{
   }
 }
 
-// HERO SECTION 
-.hero-section{
+// HERO SECTION
+.hero-section {
   padding: 180px 0 50px;
   position: relative;
   @media screen and (max-width: 1299px) {
@@ -529,7 +530,7 @@ header{
   @media screen and (max-width: 425px) {
     padding: 80px 0 0px;
   }
-  .round-orange{
+  .round-orange {
     height: 328px;
     width: 328px;
     border-radius: 100%;
@@ -544,49 +545,49 @@ header{
       top: -1%;
       right: 15%;
     }
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       right: 11.5%;
     }
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       height: 150px;
       width: 150px;
       top: 3%;
     }
   }
-  h1{
+  h1 {
     position: relative;
     z-index: 2;
     margin: 0 auto;
   }
-  p{
+  p {
     max-width: 655px;
     margin: 16px auto 20px;
     color: $gray-100;
   }
-  .star-outline{
+  .star-outline {
     position: absolute;
     top: 27%;
     left: 15%;
-    @media screen and (max-width:1399px) {
+    @media screen and (max-width: 1399px) {
       left: 5%;
     }
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width: 1199px) {
       top: 35%;
     }
-    @media screen and (max-width:991px) {
+    @media screen and (max-width: 991px) {
       top: 50%;
       height: 40px;
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
       top: 19%;
       height: 40px;
       left: 12px;
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
       top: 51%;
     }
   }
-  .img-wrapper{
+  .img-wrapper {
     margin-top: 40px;
     overflow: hidden;
     // img{
@@ -605,7 +606,7 @@ header{
         max-width: 60%;
       }
     }
-    .img2{
+    .img2 {
       width: 65%;
       @media screen and (max-width: 991px) {
         width: auto;
@@ -626,19 +627,19 @@ header{
   }
 }
 .form-group {
-  input{
+  input {
     width: 100%;
     padding: 8px 8px 8px 24px;
     border-radius: 75px;
     border: 1px solid $gray-600;
     line-height: 1.63;
   }
-  &.input-btn{
+  &.input-btn {
     position: relative;
-    input{
+    input {
       line-height: 2.3754;
     }
-    .btn-primary{
+    .btn-primary {
       position: absolute;
       right: 8px;
       top: 50%;
@@ -649,7 +650,7 @@ header{
 }
 
 // company slider
-.company-slider{
+.company-slider {
   margin-left: 8%;
   margin-right: 8%;
   position: relative;
@@ -660,11 +661,7 @@ header{
     top: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(
-      90.05deg,
-      $white 1.13%,
-      transparent 101.26%
-    );
+    background: linear-gradient(90.05deg, $white 1.13%, transparent 101.26%);
     z-index: 2;
     @media screen and (max-width: 767px) {
       width: 80px;
@@ -680,11 +677,7 @@ header{
     top: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(
-      90.05deg,
-      transparent 1.13%,
-      $white 101.26%
-    );
+    background: linear-gradient(90.05deg, transparent 1.13%, $white 101.26%);
     z-index: 2;
     @media screen and (max-width: 767px) {
       width: 80px;
@@ -693,13 +686,13 @@ header{
       width: 20px;
     }
   }
-  .slick-slide{
+  .slick-slide {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 57px;
-    img{
+    img {
       width: auto;
       max-width: 70%;
       max-height: 57px;
@@ -710,46 +703,46 @@ header{
 }
 
 // capture-solution
-.capture-solution{
-  .head-wrapper{
-    p{
+.capture-solution {
+  .head-wrapper {
+    p {
       max-width: 1262px;
       margin: 8px auto 40px;
     }
   }
-  .tab-content{
+  .tab-content {
     margin-top: 80px;
     position: relative;
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       margin-top: 40px;
-    }    
-    .star-filled{
+    }
+    .star-filled {
       position: absolute;
       top: 10px;
       left: 42%;
-      @media screen and (max-width:1199px) {
+      @media screen and (max-width: 1199px) {
         top: -70px;
       }
-      @media screen and (max-width:991px) {
+      @media screen and (max-width: 991px) {
         top: -20px;
         left: 85%;
       }
-      @media screen and (max-width:575px) {
+      @media screen and (max-width: 575px) {
         top: -35px;
         width: 28px;
         left: 90%;
       }
     }
-    .ai-ml-content{
-      p{
+    .ai-ml-content {
+      p {
         max-width: 659px;
       }
     }
   }
 }
-.rounded-tabs{
-  .nav-item{
-    .nav-link{
+.rounded-tabs {
+  .nav-item {
+    .nav-link {
       border-radius: 32px;
       border: 1px solid $gray-800;
       color: $gray-500;
@@ -760,14 +753,13 @@ header{
         color: $white;
       }
     }
-    & + .nav-item{
+    & + .nav-item {
       margin-left: 20px;
     }
   }
 }
 
-
-.challenges-section{
+.challenges-section {
   padding: 100px 0;
   background-color: $gray-700;
   position: relative;
@@ -780,7 +772,7 @@ header{
   @media screen and (max-width: 767px) {
     padding: 30px 0;
   }
-  .ring1{
+  .ring1 {
     position: absolute;
     bottom: 30%;
     left: 8%;
@@ -792,7 +784,7 @@ header{
       max-width: 50px;
     }
   }
-  .star{
+  .star {
     position: absolute;
     bottom: 10%;
     right: 8%;
@@ -800,7 +792,7 @@ header{
       right: 2%;
     }
   }
-  .challenges-wrapper{
+  .challenges-wrapper {
     background-color: $white;
     border-radius: 30px;
     padding: 100px 60px;
@@ -820,51 +812,51 @@ header{
     @media screen and (max-width: 575px) {
       padding: 20px 12px;
     }
-    .ring2{
+    .ring2 {
       position: absolute;
       top: 77px;
-      right:66px;
+      right: 66px;
       max-width: 64px;
-      @media screen and (max-width:991px) {
+      @media screen and (max-width: 991px) {
         top: 15px;
         width: 40px;
       }
-      @media screen and (max-width:475px) {
+      @media screen and (max-width: 475px) {
         right: 3%;
       }
     }
-    h2{
+    h2 {
       margin-bottom: 8px;
     }
-    .challenge-box-main{
+    .challenge-box-main {
       margin-top: 40px;
-      .challenge-box{
+      .challenge-box {
         border: 1px solid $gray-500;
         border-radius: 8px;
         padding: 65px 30px 30px;
         height: 100%;
         transition: all 0.3s ease-in-out;
-        &:hover{
+        &:hover {
           transform: translateY(-10px);
         }
         @media screen and (max-width: 575px) {
           padding: 24px;
         }
-        img{
+        img {
           height: 99px;
         }
-        h6{
+        h6 {
           font-size: 20px;
           line-height: 1.5;
           font-weight: 900;
           color: $black-300;
         }
-        p{
+        p {
           color: $gray-100;
         }
       }
     }
-    .challange-btn{
+    .challange-btn {
       margin-top: 40px;
       display: flex;
       align-items: center;
@@ -875,8 +867,8 @@ header{
   }
 }
 // customer stories
-.customer-stories{
-  .top{
+.customer-stories {
+  .top {
     position: absolute;
     height: 34px;
     top: 150px;
@@ -886,7 +878,7 @@ header{
     left: 15%;
     }
   }
-  .right{
+  .right {
     position: absolute;
     height: 64px;
     right: 25%;
@@ -897,13 +889,13 @@ header{
       right: 12px;
     }
   }
-  .left{
+  .left {
     position: absolute;
     height: 34px;
     bottom: 35%;
     left: 5%;
   }
-  .customer-card{
+  .customer-card {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0px 0px 46.8px 0px #00000014;
@@ -917,7 +909,7 @@ header{
       margin-top: 24px;
     }
   }
-  .inner{
+  .inner {
     background-image: url(/assets/images/bg-grediant.png);
   background-size: cover;
   background-position: bottom bottom;
@@ -966,7 +958,7 @@ header{
   }
 }
 
-.grediant-text{
+.grediant-text {
   background: -webkit-linear-gradient(312deg, #f98600 45%, #8a2158 91%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -975,7 +967,7 @@ header{
   }
 }
 
-.logo-slider{
+.logo-slider {
   background-color: $primary;
   position: absolute;
   left: -50px;
@@ -1012,11 +1004,11 @@ header{
 }
 
 // benifites section
-.benifits-section{
+.benifits-section {
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  .benifits-card{
+  .benifits-card {
     max-width: 85%;
     @media screen and (max-width:991px) {
       max-width: 100%;
@@ -1024,10 +1016,10 @@ header{
     .mw-400{
       max-width: 400px;
     }
-    h2{
+    h2 {
       margin-bottom: 12px;
     }
-    p{
+    p {
       margin-bottom: 80px;
       @media screen and (max-width:991px) {
         margin-bottom: 40px; 
@@ -1037,7 +1029,7 @@ header{
 }
 
 // journey section
-.journey-section{
+.journey-section {
   padding: 40px 12% 0 7%;
   background-color: $secondary;
   border-radius: 30px;
@@ -1067,15 +1059,15 @@ header{
   }
 }
 
-footer{
-  .upper-footer{
-    .logo{
+footer {
+  .upper-footer {
+    .logo {
       margin-bottom: 40px;
       @media screen and (max-width:575px) {
         margin-bottom: 25px;
       }
     }
-    h2{
+    h2 {
       color: $primary;
       font-weight: 900;
       font-size: 60px;
@@ -1106,22 +1098,22 @@ footer{
         }
       }
     }
-    .desc{
+    .desc {
       margin-bottom: 40px;
       color: $gray-100;
-      & ~ span{
+      & ~ span {
         display: block;
         margin-bottom: 16px;
         font-weight: 600;
         color: $black-300;
       }
     }
-    .single-list{
+    .single-list {
       margin-bottom: 40px;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
-      h6{
+      h6 {
         font-weight: 600;
         font-size: 20px;
         color:$black-300;
@@ -1129,7 +1121,7 @@ footer{
           font-size: 17px;
         }
       }
-      li{
+      li {
         color: $gray-100;
         font-size: 16px;
         line-height: 40px;
@@ -1160,7 +1152,7 @@ footer{
       }
     }
   }
-  .lower-footer{
+  .lower-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1177,15 +1169,15 @@ footer{
     }
      & > div{
       gap: 10px 30px;
-     }
-    a{
+    }
+    a {
       color: $gray-100;
       text-decoration: none;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
-    p{
+    p {
       font-size: 16px;
     }
   }
@@ -1193,13 +1185,10 @@ footer{
 
 .banner-section{
   padding-top: 75px;
-  .content-wrapper{
+  .content-wrapper {
     position: relative;
     text-align: center;
-    width: 100%;
-    max-width: 926px;
-    margin: 0 auto;
-    h2{
+    h1 {
       margin-bottom: 16px;
       font-size: 60px;
       line-height: 1.4;
@@ -1218,7 +1207,7 @@ footer{
         font-size: 30px;
       }
     }
-    p{
+    p {
       margin: 0 auto 30px;
       @media screen and (max-width: 767px) {
         margin: 0 auto 20px;
@@ -1227,13 +1216,15 @@ footer{
   }
 }
 
-
 // Career Style
-.career-banner{
-  .star{
+.career-banner {
+  .star {
     position: absolute;
     top: 55%;
-    left: -10%;
+    left: 10%;
+    @media screen and (max-width: 1399px) {
+      left: 3%;
+    }
     @media screen and (max-width: 1199px) {
       top: 83%;
       left: 80px;
@@ -1248,21 +1239,21 @@ footer{
       display: none;
     }
   }
-  .ring{
+  .ring {
     position: absolute;
     top: 30%;
-    right: -8%;
-    @media screen and (max-width:1399px) {
+    right: 8%;
+    @media screen and (max-width: 1399px) {
       max-width: 60px;
-      right: -1%;
+      right: 1%;
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
       max-width: 40px;
-        right: 0%;
-        top: -40px;
+      right: 0%;
+      top: -40px;
     }
   }
-  p{
+  p {
     max-width: 889px;
   }
 }
@@ -1477,5 +1468,320 @@ footer{
     -ms-transform: translateY(100%) translateX(-50%);
     -o-transform: translateY(100%) translateX(-50%);
     transform: translateY(100%) translateX(-50%);
+  }
+}
+
+
+
+
+// Slide Section Style
+.caree-slider {
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+  .content {
+    padding: 50px 0;
+    p {
+      font-size: 30px;
+      line-height: 1.67;
+      margin-bottom: 40px;
+      color: $black-300;
+      @media screen and (max-width: 1199px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+        color: $light-gray-200;
+      }
+    }
+  }
+  .auto-slide {
+    width: 16.67%;
+    height: 100%;
+    max-width: 100px;
+    border-left: 1px solid $gray-300;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 991px) {
+      max-width: unset;
+    }
+    &:last-of-type {
+      border-right: 1px solid $gray-300;
+    }
+    &:nth-child(even) {
+      img {
+        margin: 80px auto 0;
+      }
+    }
+    img {
+      margin: 0 auto 80px;
+      max-width: 40px;
+    }
+    .reverse .slick-track {
+      flex-direction: column-reverse;
+    }
+  }
+  .sliders-wrapper {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+// Benefit style
+.benifit-section {
+  h2 {
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  .benefit-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media screen and (max-width: 475px) {
+      gap: 24px;
+    }
+    .box {
+      width: calc(25% - 22.5px);
+      border-radius: 8px;
+      padding: 40px 30px;
+      text-align: center;
+      @media screen and (max-width: 1199px) {
+        width: calc(33.33% - 20px);
+      }
+      @media screen and (max-width: 991px) {
+        padding: 30px 14px;
+      }
+      @media screen and (max-width: 767px) {
+        width: calc(50% - 15px);
+      }
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
+      img {
+        margin: 0 auto;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.55;
+        color: $black-300;
+        margin-top: 26px;
+        @media screen and (max-width: 991px) {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+        @media screen and (max-width: 767px) {
+          margin-top: 12px;
+        }
+      }
+      &:nth-child(1),
+      &:nth-child(8) {
+        background-color: #fffaf1;
+      }
+      &:nth-child(2),
+      &:nth-child(7) {
+        background-color: #f2f9ff;
+      }
+      &:nth-child(3),
+      &:nth-child(6) {
+        background-color: #fafaff;
+      }
+      &:nth-child(4),
+      &:nth-child(5) {
+        background-color: #fff6f4;
+      }
+    }
+  }
+}
+
+// Current Openings style
+.current-opening-section {
+  background-color: $gray-700;
+  .head {
+    p {
+      margin-bottom: 60px;
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .opening-list {
+    .single-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $white;
+      padding: 40px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 30px;
+      }
+      @media screen and (max-width: 575px) {
+        padding: 20px;
+      }
+      h6 {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $black-300;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+        @media screen and (max-width: 575px) {
+          margin-bottom: 12px;
+          font-size: 18px;
+        }
+      }
+      .desc {
+        display: flex;
+        align-items: center;
+        p {
+          color: $gray-100;
+          padding-right: 30px;
+          line-height: 0.75;
+          &:last-of-type {
+            padding-left: 30px;
+            padding-right: 0;
+            border-left: 1px solid $gray-100;
+          }
+          @media screen and (max-width: 767px) {
+            padding-right: 15px;
+            font-size: 14px;
+            &:last-of-type {
+              padding-left: 15px;
+            }
+          }
+          @media screen and (max-width: 575px) {
+            padding-right: 10px;
+            &:last-of-type {
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Life section style
+.life-section {
+  .head {
+    h2 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    .btn-primary {
+      margin-bottom: 60px;
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .parent-container {
+    height: 34vw;
+    position: relative;
+    a {
+      position: absolute;
+      &.image1 {
+        top: 87px;
+        img {
+          width: 19.149vw;
+        }
+      }
+      &.image2 {
+        bottom: 2.5vw;
+        left: 8.4vw;
+        img {
+          width: 10.64vw;
+        }
+      }
+      &.image3 {
+        top: 0;
+        left: 17.6vw;
+        img {
+          width: 13.192vw;
+        }
+      }
+      &.image4 {
+        top: 10.9vw;
+        left: 20.5vw;
+        img {
+          width: 9.203vw;
+        }
+      }
+      &.image5 {
+        bottom: 0px;
+        left: 21.6vw;
+        img {
+          width: 15.4vw;
+        }
+      }
+      &.image6 {
+        top: 0px;
+        left: 32vw;
+        img {
+          width: 34vw;
+        }
+      }
+      &.image7 {
+        bottom: 0px;
+        left: 38.6vw;
+        img {
+          width: 26vw;
+        }
+      }
+      &.image8 {
+        bottom: 5.4vw;
+        left: 58.9vw;
+        img {
+          width: 19vw;
+        }
+      }
+      &.image9 {
+        top: 3.3vw;
+        left: 67.2vw;
+        img {
+          width: 9vw;
+        }
+      }
+    }
+  }
+}
+
+.high-five-section{
+  .journey-section{
+    background-color: $white;
+    border: 1px solid  #E2E2E2;
+    p{
+      max-width: 90%;
+    }
   }
 }

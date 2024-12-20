@@ -51,6 +51,7 @@ $(".company-slider").slick({
     },
   ]
 });
+
 $(".logo-slider").slick({
   speed: 5000,
   autoplay: true,
@@ -211,4 +212,45 @@ jQuery(document).ready(function($){
 		$oldWord.removeClass('is-visible').addClass('is-hidden');
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
+});
+
+$(".auto-slide").slick({
+  infinite: true,
+  speed: 2000,
+  autoplay: true,
+  autoplaySpeed: 1,
+  cssEase: 'linear',
+  slidesToShow: 3.75,
+  arrows: false,
+  buttons: false,
+  vertical: true,
+  verticalSwiping: false,
+  centerMode: true,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1.5,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },  
+  ]
+});
+
+
+$('.parent-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
 });

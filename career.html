@@ -9,31 +9,781 @@
     <link rel="stylesheet" href="styles/all.min.css" />
     <link rel="stylesheet" href="./styles/slick.css">
     <link rel="stylesheet" href="./styles/slick-theme.css">
+    <link rel="stylesheet" href="./styles/magnific-popup.css">
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
+    <!-- HEADER  -->
+    <header>
+        <div class="header-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/svg/main-logo.svg" alt="" />
+                        </a>
+                        <span
+                            class="logo-tagline d-sm-inline-block d-none text-decoration-none">support@datavizz.in</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-expanded="false">
+                            <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24">
+                                <path id="primary" d="M3,12H21M9,18H21M3,6H15" stroke="#000000" ; style="
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2;
+                    transition: all 0.2s ease-in-out;
+                  "></path>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item dropdown-mega-menu">
+                                    <a class="nav-link active">Products</a>
+                                    <div class="dropdown-menu mega-menu">
+                                        <p class="mega-menu-heading"><span class="text-primary">DataVizz:</span>
+                                            Synergising your data</p>
+                                        <div>
+                                            <div class="container">
+                                                <div class="d-flex align-items-start outside">
+                                                    <div class="nav flex-column nav-pills" id="v-pills-tab"
+                                                        role="tablist" aria-orientation="vertical">
+                                                        <button class="nav-link active" id="v-pills-home-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                                                            type="button" role="tab" aria-controls="v-pills-home"
+                                                            aria-selected="true"><span>Data Governance</span> <img
+                                                                src="/assets/images/svg/right-arrow.svg"
+                                                                alt="" /></button>
+                                                        <button class="nav-link" id="v-pills-profile-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                                                            type="button" role="tab" aria-controls="v-pills-profile"
+                                                            aria-selected="false"><span>Data Intelligence</span> <img
+                                                                src="/assets/images/svg/right-arrow.svg"
+                                                                alt="" /></button>
+                                                        <button class="nav-link" id="v-pills-disabled-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                                                            type="button" role="tab" aria-controls="v-pills-disabled"
+                                                            aria-selected="false"><span>Data Privacy</span> <img
+                                                                src="/assets/images/svg/right-arrow.svg"
+                                                                alt="" /></button>
+                                                    </div>
+                                                    <div class="tab-content flex-fill" id="v-pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="v-pills-home"
+                                                            role="tabpanel" aria-labelledby="v-pills-home-tab"
+                                                            tabindex="0">
+                                                            <div
+                                                                class="mega-head d-lg-flex d-none justify-content-between align-items-center">
+                                                                <h5 class="mb-0">The Data Governance Cloud</h5>
+                                                                <a href="#" class="btn btn-primary">
+                                                                    <span>See Product Details</span>
+                                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="mega-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/catalog.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data Catalog</h6>
+                                                                                <p>Organize and discover data assets
+                                                                                    with ease. </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/quality.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data Quality</h6>
+                                                                                <p>Ensure accurate, reliable, and
+                                                                                    consistent data across systems.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6 mb-lg-0 mb-4">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/governence.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data Governance</h6>
+                                                                                <p>Establish control, compliance, and
+                                                                                    data integrity protocols.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/intelligence.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data lineage</h6>
+                                                                                <p>Track data flow and transformations
+                                                                                    for better transparency.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                                            <div
+                                                                class="mega-head d-lg-flex d-none justify-content-between align-items-center">
+                                                                <h5 class="mb-0">The Data Intelligence Cloud</h5>
+                                                                <a href="#" class="btn btn-primary">
+                                                                    <span>See Product Details</span>
+                                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="mega-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/catalog.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data Lake</h6>
+                                                                                <p> Store vast amounts of structured and
+                                                                                    unstructured data efficiently. </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/quality.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data Query</h6>
+                                                                                <p>Simplify data search and retrieval
+                                                                                    with powerful query tools.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6 mb-lg-0 mb-4">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/governence.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Data Analytics</h6>
+                                                                                <p>Transform raw data into actionable
+                                                                                    insights and business value.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/intelligence.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>ML Models</h6>
+                                                                                <p>Leverage machine learning to drive
+                                                                                    predictive analytics and
+                                                                                    automation. </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                                                            aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                                                            <div
+                                                                class="mega-head d-lg-flex d-none justify-content-between align-items-center">
+                                                                <h5 class="mb-0">The Data Privacy Cloud</h5>
+                                                                <a href="#" class="btn btn-primary">
+                                                                    <span>See Product Details</span>
+                                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="mega-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/catalog.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>The Data Privacy Cloud</h6>
+                                                                                <p> Dashboard with powerful analytics
+                                                                                    and Consent log for audit and
+                                                                                    compliance</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/quality.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Smart website scanning</h6>
+                                                                                <p> Identifies cookies and vendors on
+                                                                                    your website automatically,
+                                                                                    categorizes them smartly and
+                                                                                    provides recommendations to save
+                                                                                    time. </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6 mb-lg-0 mb-4">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/governence.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Personalized & Multilingual Banner
+                                                                                </h6>
+                                                                                <p>Create a personalized, multi-lingual
+                                                                                    consent banner for a seamless user
+                                                                                    experience and stronger brand
+                                                                                    identity. </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="menu-card">
+                                                                            <span class="icon-out">
+                                                                                <img src="/assets/images/svg/intelligence.svg"
+                                                                                    alt="">
+                                                                            </span>
+                                                                            <div class="flex-fill">
+                                                                                <h6>Easy Third-party Vendor Management
+                                                                                </h6>
+                                                                                <p>Efficiently manage third-party
+                                                                                    vendors (Google Analytics & Ads,
+                                                                                    Facebook Pixel, etc.) for improved
+                                                                                    data privacy.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Solutions</a>
+                                    <div class="dropdown-menu">
+                                        <ul class="">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Partners</a></li>
+                                            <li><a href="#">Career</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Company</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inside</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">Resources</a></li>
+                                            <li><a href="#">Blogs</a></li>
+                                            <li><a href="#">Events</a></li>
+                                            <li><a href="#">Support</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <span>Contact Us</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <div class="banner-section pb-150 career-banner">
         <div class="container">
             <div class="content-wrapper">
-                <h2>Learn – Earn – Grow and Have Fun</h2>
-                <p>DataVizz cares about more than just building software. We are passionate about helping customers build thriving data cultures and empowering a more curious and rational world. </p>
-                <a href="#" class="btn btn-primary">
-                    <span>
-                        View Our Openings
-                    </span>
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10 col-xxl-7">
+                        <h1>Learn – Earn – Grow and Have Fun</h1>
+                        <p>DataVizz cares about more than just building software. We are passionate about helping
+                            customers build thriving data cultures and empowering a more curious and rational world. 
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            <span>
+                                View Our Openings
+                            </span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
                 <img src="./assets/images/svg/black-star-group.svg" alt="" class="star">
                 <img src="./assets/images/svg/star-outline.svg" alt="" class="ring rotate">
             </div>
         </div>
     </div>
 
+    <!-- slides section -->
+    <div class="caree-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="content">
+                        <p>At DataVizz, we’re a group of passionate foodies who firmly believe that the secret to great
+                            work is great food! We work hard, eat even harder, play like pros, have a blast, and most
+                            importantly, grow together</p>
+                        <p>If you can vibe with us over a cup of strong coffee (or tea, no judgment!), we want you on
+                            our team. If tech and analytics make your heart race, congratulations you’ve just found your
+                            dream job stop!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="sliders-wrapper">
+                        <div class="auto-slide">
+                            <div>
+                                <img src="./assets/images/svg/star-primary.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-primary.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-primary.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-primary.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-primary.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-primary.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="auto-slide">
+                            <div>
+                                <img src="./assets/images/svg/primary-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="auto-slide">
+                            <div>
+                                <img src="./assets/images/svg/primary-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/primary-triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="auto-slide">
+                            <div>
+                                <img src="./assets/images/svg/black-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-star.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="auto-slide">
+                            <div>
+                                <img src="./assets/images/svg/star-outline.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-outline.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-outline.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-outline.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-outline.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/star-outline.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="auto-slide">
+                            <div>
+                                <img src="./assets/images/svg/black-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-triangle.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/images/svg/black-triangle.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benifit section -->
+    <div class="benifit-section pt-150">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9 text-center">
+                    <h2>Benefits of Working with Foodies</h2>
+                    <p>Remember, At DataVizz, everyone’s voice is valued, and the team knows that answers and insights
+                        can come from anywhere. </p>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="box">
+                    <img src="./assets/images/svg/clipboard.svg" alt="">
+                    <p>5 days working culture</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/ghost.svg" alt="">
+                    <p>Competitive salary</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/chart-square.svg" alt="">
+                    <p>Learning opportunities</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/cake.svg" alt="">
+                    <p>Festival, birthdays and work anniversary celebration</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/crown.svg" alt="">
+                    <p>Performance appreciation bonus and reward</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/emoji-happy.svg" alt="">
+                    <p>Employee friendly leave policies</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/clock.svg" alt="">
+                    <p>Flexible working hours</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/images/svg/flash.svg" alt="">
+                    <p>Referral bonus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-150 pb-150 high-five-section">
+        <div class="journey-section">
+            <div class="flex-fill mb-lg-4 pb-lg-3">
+                <h2><span>High Five for Five <br class="d-none d-lg-block"> Times! </span></h2>
+                <p>Because we are looking for you only! Check current opening and apply asap, our cozy working place needed your presence!</p>
+                <a href="#" class="btn btn-secondary outline mt-20 me-3">
+                    <span>Join Us</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <img src="/assets/images/svg/balloon.svg" alt="" class="ps-3">
+        </div>
+    </div>
+
+    <!-- Current Openings section -->
+    <div class="current-opening-section pt-100 pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 text-center head">
+                    <h2>Current Openings</h2>
+                    <p>We take care of our team members, so they can deliver their best work. Here are a few of the
+                        benefits and perks we offer to our employees:</p>
+                </div>
+            </div>
+            <div class="opening-list">
+                <div class="single-list">
+                    <div>
+                        <h6>Devops Engineer</h6>
+                        <div class="desc">
+                            <p>Experience 4+ Years</p>
+                            <p>No of openings 5</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <span>Contact Us</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="single-list">
+                    <div>
+                        <h6>business analytics</h6>
+                        <div class="desc">
+                            <p>Experience 4+ Years</p>
+                            <p>No of openings 5</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <span>Contact Us</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="single-list">
+                    <div>
+                        <h6>QA Engineer</h6>
+                        <div class="desc">
+                            <p>Experience 4+ Years</p>
+                            <p>No of openings 5</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <span>Contact Us</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Current Openings section -->
+    <div class="life-section pt-150 pb-150">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-lg-10 head">
+                    <h2>Life @DataVizz</h2>
+                    <p>Eat – Work – Sleep – Repeat... We don’t believe in having fun only on weekends because we do
+                        parties on weekdays as well!  </p>
+                    <a href="#" class="btn btn-primary">
+                        <span>Check current openings and apply</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="parent-container">
+                <a href="./assets/images/life-1.png" class="image1">
+                    <img src="./assets/images/life-1.png" alt="">
+                </a>
+                <a href="./assets/images/life-2.png" class="image2">
+                    <img src="./assets/images/life-2.png" alt="">
+                </a>
+                <a href="./assets/images/life-3.png" class="image3">
+                    <img src="./assets/images/life-3.png" alt="">
+                </a>
+                <a href="./assets/images/life-4.png" class="image4">
+                    <img src="./assets/images/life-4.png" alt="">
+                </a>
+                <a href="./assets/images/life-5.png" class="image5">
+                    <img src="./assets/images/life-5.png" alt="">
+                </a>
+                <a href="./assets/images/life-6.png" class="image6">
+                    <img src="./assets/images/life-6.png" alt="">
+                </a>
+                <a href="./assets/images/life-7.png" class="image7">
+                    <img src="./assets/images/life-7.png" alt="">
+                </a>
+                <a href="./assets/images/life-8.png" class="image8">
+                    <img src="./assets/images/life-8.png" alt="">
+                </a>
+                <a href="./assets/images/life-9.png" class="image9">
+                    <img src="./assets/images/life-9.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="journey-section">
+            <div class="flex-fill mb-lg-4 pb-lg-3">
+                <h2><span>Check current openings and apply</span></h2>
+                <p>Apply asap because want to have party hard on your joining date!  </p>
+                <a href="#" class="btn btn-secondary outline mt-20 me-3">
+                    <span>Contact us</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <img src="/assets/images/svg/balloon.svg" alt="" class="ps-3">
+        </div>
+    </div>
+
+    <footer class="pt-150">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-4">
+                        <div class="logo">
+                            <img src="./assets/images/svg/logo.svg" alt="">
+                        </div>
+                        <h2>Let’s Work Together! <img src="./assets/images/svg/primary-star.svg" alt=""
+                                class="rotate circle"></h2>
+                        <p class="desc">Empowering your data insights through data observability tool</p>
+                        <span>Subscribe Our Newsletter to Get More Updates</span>
+                        <div class="form-group input-btn">
+                            <input type="text" placeholder="Enter Email Address">
+                            <a href="#" class="btn btn-primary">
+                                Submit
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 mt-lg-0 mt-5">
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-sm-4">
+                                <div class="single-list">
+                                    <h6>Platform</h6>
+                                    <ul>
+                                        <li>Platform Overview</li>
+                                        <li>Integrations</li>
+                                    </ul>
+                                </div>
+                                <div class="single-list">
+                                    <h6>Resources</h6>
+                                    <ul>
+                                        <li>Events</li>
+                                        <li>Docs</li>
+                                        <li>Contact Support</li>
+                                    </ul>
+                                </div>
+                                <div class="single-list">
+                                    <h6>By Technologies</h6>
+                                    <ul>
+                                        <li>AWS</li>
+                                        <li>Snowflake</li>
+                                        <li>Databricks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-sm-4">
+                                <div class="single-list">
+                                    <h6>By Use cases</h6>
+                                    <ul>
+                                        <li>Data Catalog</li>
+                                        <li>Data Quality</li>
+                                        <li>Data Governance</li>
+                                        <li>Data Lineage</li>
+                                        <li>Data Query</li>
+                                    </ul>
+                                </div>
+                                <div class="single-list">
+                                    <h6>Company</h6>
+                                    <ul>
+                                        <li>About Us</li>
+                                        <li>Partners</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-4 mt-sm-0 mt-4">
+                                <div class="single-list">
+                                    <h6>Contact Us</h6>
+                                    <ul>
+                                        <li>DataVizz, 709-One World WestOpp. Bopal Approach BRTS,Ahmedabad,Gujarat,
+                                            India-380058</li>
+                                        <li><a href="">hello@datavizz.in</a></li>
+                                        <li><a href="">Call : +91 7778921793</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="single-list">
+                                    <h6 class="mb-3">Follow Us On</h6>
+                                    <ul class="footer-social">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <p>© 2024 Datavizz. All rights reserved</p>
+                <div class="d-flex align-items-center">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="/js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
